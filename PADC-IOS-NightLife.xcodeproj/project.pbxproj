@@ -7,22 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A6204D521B5477200743880 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6204D421B5477200743880 /* CardView.swift */; };
+		5A84EB0D21B58255006D3580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A84EB0C21B58255006D3580 /* Assets.xcassets */; };
+		5A84EB1621B587EC006D3580 /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A84EB1521B587EC006D3580 /* MenuModel.swift */; };
+		5A84EB1821B5892F006D3580 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A84EB1721B5892F006D3580 /* MenuCollectionViewCell.swift */; };
 		68D66DD95E9439F7A7F7877C /* Pods_PADC_IOS_NightLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 533472EA650205DDC56F3243 /* Pods_PADC_IOS_NightLife.framework */; };
 		99C0909421B3AEB1000F6CAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C0909321B3AEB1000F6CAE /* AppDelegate.swift */; };
 		99C0909621B3AEB1000F6CAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C0909521B3AEB1000F6CAE /* ViewController.swift */; };
 		99C0909921B3AEB1000F6CAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99C0909721B3AEB1000F6CAE /* Main.storyboard */; };
-		99C0909B21B3AEB3000F6CAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99C0909A21B3AEB3000F6CAE /* Assets.xcassets */; };
 		99C0909E21B3AEB3000F6CAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99C0909C21B3AEB3000F6CAE /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		533472EA650205DDC56F3243 /* Pods_PADC_IOS_NightLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PADC_IOS_NightLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A6204D421B5477200743880 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		5A84EB0C21B58255006D3580 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A84EB1521B587EC006D3580 /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
+		5A84EB1721B5892F006D3580 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		64596ED8E938B8CB490C217D /* Pods-PADC-IOS-NightLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PADC-IOS-NightLife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PADC-IOS-NightLife/Pods-PADC-IOS-NightLife.debug.xcconfig"; sourceTree = "<group>"; };
 		99C0909021B3AEB1000F6CAE /* PADC-IOS-NightLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PADC-IOS-NightLife.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99C0909321B3AEB1000F6CAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99C0909521B3AEB1000F6CAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		99C0909821B3AEB1000F6CAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		99C0909A21B3AEB3000F6CAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99C0909D21B3AEB3000F6CAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99C0909F21B3AEB3000F6CAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA056A554284667833E0BD8C /* Pods-PADC-IOS-NightLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PADC-IOS-NightLife.release.xcconfig"; path = "Pods/Target Support Files/Pods-PADC-IOS-NightLife/Pods-PADC-IOS-NightLife.release.xcconfig"; sourceTree = "<group>"; };
@@ -48,6 +54,47 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5A6204D121B5470300743880 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				99C0909721B3AEB1000F6CAE /* Main.storyboard */,
+				99C0909C21B3AEB3000F6CAE /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		5A6204D221B5471900743880 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				99C0909521B3AEB1000F6CAE /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5A6204D321B5475D00743880 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				5A6204D421B5477200743880 /* CardView.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		5A6204D621B54A3A00743880 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5A84EB1721B5892F006D3580 /* MenuCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		5A84EB1421B587C6006D3580 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5A84EB1521B587EC006D3580 /* MenuModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		99C0908721B3AEB1000F6CAE = {
 			isa = PBXGroup;
 			children = (
@@ -69,12 +116,14 @@
 		99C0909221B3AEB1000F6CAE /* PADC-IOS-NightLife */ = {
 			isa = PBXGroup;
 			children = (
+				5A84EB1421B587C6006D3580 /* Model */,
+				5A6204D621B54A3A00743880 /* Cell */,
+				5A6204D321B5475D00743880 /* Component */,
+				5A6204D221B5471900743880 /* Controller */,
+				5A6204D121B5470300743880 /* Storyboard */,
 				99C0909321B3AEB1000F6CAE /* AppDelegate.swift */,
-				99C0909521B3AEB1000F6CAE /* ViewController.swift */,
-				99C0909721B3AEB1000F6CAE /* Main.storyboard */,
-				99C0909A21B3AEB3000F6CAE /* Assets.xcassets */,
-				99C0909C21B3AEB3000F6CAE /* LaunchScreen.storyboard */,
 				99C0909F21B3AEB3000F6CAE /* Info.plist */,
+				5A84EB0C21B58255006D3580 /* Assets.xcassets */,
 			);
 			path = "PADC-IOS-NightLife";
 			sourceTree = "<group>";
@@ -149,7 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99C0909E21B3AEB3000F6CAE /* LaunchScreen.storyboard in Resources */,
-				99C0909B21B3AEB3000F6CAE /* Assets.xcassets in Resources */,
+				5A84EB0D21B58255006D3580 /* Assets.xcassets in Resources */,
 				99C0909921B3AEB1000F6CAE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,8 +261,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A84EB1621B587EC006D3580 /* MenuModel.swift in Sources */,
 				99C0909621B3AEB1000F6CAE /* ViewController.swift in Sources */,
+				5A6204D521B5477200743880 /* CardView.swift in Sources */,
 				99C0909421B3AEB1000F6CAE /* AppDelegate.swift in Sources */,
+				5A84EB1821B5892F006D3580 /* MenuCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +413,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84S78N95ZC;
 				INFOPLIST_FILE = "PADC-IOS-NightLife/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -379,6 +432,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84S78N95ZC;
 				INFOPLIST_FILE = "PADC-IOS-NightLife/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

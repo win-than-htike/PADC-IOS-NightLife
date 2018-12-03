@@ -1,0 +1,93 @@
+//
+//  ViewController.swift
+//  PADC-IOS-NightLife
+//
+//  Created by Win Than Htike on 12/2/18.
+//  Copyright © 2018 padcmyanmar. All rights reserved.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+
+    @IBOutlet weak var collectionViewMenu: UICollectionView!
+    var estimateWidth = 160.0
+    var cellMarginSize = 16.0
+    
+    var menuList: [MenuModel] =
+        [
+            MenuModel(title: "Restaurant", icon: UIImage(named: "restaurant")!),
+            MenuModel(title: "Bar", icon: UIImage(named: "bar")!),
+            MenuModel(title: "Club", icon: UIImage(named: "club")!),
+            MenuModel(title: "KTV", icon: UIImage(named: "ktv")!)
+    ]
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.setUpCollectionView()
+        self.setupGridView()
+    }
+    
+    func setUpCollectionView() {
+        self.collectionViewMenu.delegate = self
+        self.collectionViewMenu.dataSource = self
+    }
+
+    func setupGridView() {
+        let flow = collectionViewMenu?.collectionViewLayout as! UICollectionViewFlowLayout
+        flow.minimumInteritemSpacing = CGFloat(self.cellMarginSize)
+        flow.minimumLineSpacing = CGFloat(self.cellMarginSize)
+    }
+}
+
+extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return self.menuList.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let menu = menuList[indexPath.row]
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MenuCollectionViewCell", for: indexPath) as! MenuCollectionViewCell
+        cell.setMenu(menu: menu)
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        /*let newsFeed = newsFeeds[indexPath.row]
+         performSegue(withIdentifier: "AboutDao", sender: newsFeed)*/
+        
+//        switch indexPath.row {
+//        case 0:
+//            Analytics.logEvent(GoogleAnalyticsConstants.Event.DASHBOARD_DAO, parameters: nil)
+//            performSegue(withIdentifier: "AboutDao", sender: indexPath.row)
+//
+//        }
+        
+        collectionViewMenu.deselectItem(at: indexPath, animated: true)
+    }
+    
+}
+
+extension ViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = self.calculateWith()
+        return CGSize(width: width, height: 170)
+    }
+    
+    func calculateWith() -> CGFloat {
+        let estimatedWidth = CGFloat(estimateWidth)
+        let cellCount = floor(CGFloat(self.view.frame.size.width / estimatedWidth))
+        
+        let margin = CGFloat(cellMarginSize * 2)
+        let width = (self.view.frame.size.width - CGFloat(cellMarginSize) * (cellCount - 1) - margin) / cellCount
+        
+        return width
+    }
+}
+
+
