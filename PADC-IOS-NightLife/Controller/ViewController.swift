@@ -58,15 +58,33 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        /*let newsFeed = newsFeeds[indexPath.row]
-         performSegue(withIdentifier: "AboutDao", sender: newsFeed)*/
-        
-//        switch indexPath.row {
-//        case 0:
-//            Analytics.logEvent(GoogleAnalyticsConstants.Event.DASHBOARD_DAO, parameters: nil)
-//            performSegue(withIdentifier: "AboutDao", sender: indexPath.row)
-//
-//        }
+        switch indexPath.row {
+        case 0:
+            let navigationController = UIStoryboard(name: "Restaurant", bundle: nil).instantiateViewController(withIdentifier: "RestaurantsViewController") as! UINavigationController
+            self.present(navigationController, animated: true, completion: nil)
+            break
+            
+        case 1:
+            let navigationController = UIStoryboard(name: "Bar", bundle: nil).instantiateViewController(withIdentifier: "BarsViewController") as! UINavigationController
+            self.present(navigationController, animated: true, completion: nil)
+            break
+            
+        case 2:
+            let navigationController = UIStoryboard(name: "Club", bundle: nil).instantiateViewController(withIdentifier: "ClubsViewController") as! UINavigationController
+            self.present(navigationController, animated: true, completion: nil)
+            break
+            
+        case 3:
+            let navigationController = UIStoryboard(name: "KTV", bundle: nil).instantiateViewController(withIdentifier: "KTVsViewController") as! UINavigationController
+            self.present(navigationController, animated: true, completion: nil)
+            break
+            
+        default:
+            let navigationController = UIStoryboard(name: "Restaurant", bundle: nil).instantiateViewController(withIdentifier: "RestaurantsViewController") as! UINavigationController
+            self.present(navigationController, animated: true, completion: nil)
+            break
+
+        }
         
         collectionViewMenu.deselectItem(at: indexPath, animated: true)
     }

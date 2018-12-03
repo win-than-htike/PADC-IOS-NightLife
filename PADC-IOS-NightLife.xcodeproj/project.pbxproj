@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A0C3FAB21B5A81000A59D47 /* Restaurant.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0C3FAA21B5A80F00A59D47 /* Restaurant.storyboard */; };
+		5A0C3FAD21B5A81F00A59D47 /* Bar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0C3FAC21B5A81F00A59D47 /* Bar.storyboard */; };
+		5A0C3FAF21B5A82D00A59D47 /* Club.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0C3FAE21B5A82D00A59D47 /* Club.storyboard */; };
+		5A0C3FB121B5A83B00A59D47 /* KTV.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0C3FB021B5A83B00A59D47 /* KTV.storyboard */; };
+		5A0C3FB321B5A87700A59D47 /* RestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0C3FB221B5A87700A59D47 /* RestaurantsViewController.swift */; };
+		5A0C3FB521B5A98C00A59D47 /* BarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0C3FB421B5A98C00A59D47 /* BarsViewController.swift */; };
+		5A0C3FB721B5A9CE00A59D47 /* ClubsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0C3FB621B5A9CE00A59D47 /* ClubsViewController.swift */; };
+		5A0C3FB921B5A9FB00A59D47 /* KTVsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0C3FB821B5A9FB00A59D47 /* KTVsViewController.swift */; };
 		5A6204D521B5477200743880 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6204D421B5477200743880 /* CardView.swift */; };
 		5A84EB0D21B58255006D3580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A84EB0C21B58255006D3580 /* Assets.xcassets */; };
 		5A84EB1621B587EC006D3580 /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A84EB1521B587EC006D3580 /* MenuModel.swift */; };
@@ -20,6 +28,14 @@
 
 /* Begin PBXFileReference section */
 		533472EA650205DDC56F3243 /* Pods_PADC_IOS_NightLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PADC_IOS_NightLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A0C3FAA21B5A80F00A59D47 /* Restaurant.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Restaurant.storyboard; sourceTree = "<group>"; };
+		5A0C3FAC21B5A81F00A59D47 /* Bar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Bar.storyboard; sourceTree = "<group>"; };
+		5A0C3FAE21B5A82D00A59D47 /* Club.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Club.storyboard; sourceTree = "<group>"; };
+		5A0C3FB021B5A83B00A59D47 /* KTV.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = KTV.storyboard; sourceTree = "<group>"; };
+		5A0C3FB221B5A87700A59D47 /* RestaurantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewController.swift; sourceTree = "<group>"; };
+		5A0C3FB421B5A98C00A59D47 /* BarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarsViewController.swift; sourceTree = "<group>"; };
+		5A0C3FB621B5A9CE00A59D47 /* ClubsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubsViewController.swift; sourceTree = "<group>"; };
+		5A0C3FB821B5A9FB00A59D47 /* KTVsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KTVsViewController.swift; sourceTree = "<group>"; };
 		5A6204D421B5477200743880 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		5A84EB0C21B58255006D3580 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A84EB1521B587EC006D3580 /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
@@ -59,6 +75,10 @@
 			children = (
 				99C0909721B3AEB1000F6CAE /* Main.storyboard */,
 				99C0909C21B3AEB3000F6CAE /* LaunchScreen.storyboard */,
+				5A0C3FAA21B5A80F00A59D47 /* Restaurant.storyboard */,
+				5A0C3FAC21B5A81F00A59D47 /* Bar.storyboard */,
+				5A0C3FAE21B5A82D00A59D47 /* Club.storyboard */,
+				5A0C3FB021B5A83B00A59D47 /* KTV.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -67,6 +87,10 @@
 			isa = PBXGroup;
 			children = (
 				99C0909521B3AEB1000F6CAE /* ViewController.swift */,
+				5A0C3FB221B5A87700A59D47 /* RestaurantsViewController.swift */,
+				5A0C3FB421B5A98C00A59D47 /* BarsViewController.swift */,
+				5A0C3FB621B5A9CE00A59D47 /* ClubsViewController.swift */,
+				5A0C3FB821B5A9FB00A59D47 /* KTVsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -197,7 +221,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A0C3FAF21B5A82D00A59D47 /* Club.storyboard in Resources */,
 				99C0909E21B3AEB3000F6CAE /* LaunchScreen.storyboard in Resources */,
+				5A0C3FAB21B5A81000A59D47 /* Restaurant.storyboard in Resources */,
+				5A0C3FAD21B5A81F00A59D47 /* Bar.storyboard in Resources */,
+				5A0C3FB121B5A83B00A59D47 /* KTV.storyboard in Resources */,
 				5A84EB0D21B58255006D3580 /* Assets.xcassets in Resources */,
 				99C0909921B3AEB1000F6CAE /* Main.storyboard in Resources */,
 			);
@@ -262,7 +290,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A84EB1621B587EC006D3580 /* MenuModel.swift in Sources */,
+				5A0C3FB521B5A98C00A59D47 /* BarsViewController.swift in Sources */,
+				5A0C3FB921B5A9FB00A59D47 /* KTVsViewController.swift in Sources */,
+				5A0C3FB321B5A87700A59D47 /* RestaurantsViewController.swift in Sources */,
 				99C0909621B3AEB1000F6CAE /* ViewController.swift in Sources */,
+				5A0C3FB721B5A9CE00A59D47 /* ClubsViewController.swift in Sources */,
 				5A6204D521B5477200743880 /* CardView.swift in Sources */,
 				99C0909421B3AEB1000F6CAE /* AppDelegate.swift in Sources */,
 				5A84EB1821B5892F006D3580 /* MenuCollectionViewCell.swift in Sources */,
