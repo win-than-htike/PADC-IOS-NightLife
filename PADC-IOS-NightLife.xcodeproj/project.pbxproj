@@ -19,6 +19,7 @@
 		5A84EB0D21B58255006D3580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A84EB0C21B58255006D3580 /* Assets.xcassets */; };
 		5A84EB1621B587EC006D3580 /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A84EB1521B587EC006D3580 /* MenuModel.swift */; };
 		5A84EB1821B5892F006D3580 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A84EB1721B5892F006D3580 /* MenuCollectionViewCell.swift */; };
+		5AD8177421B90BD20020CD35 /* LoadingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD8177321B90BD20020CD35 /* LoadingIndicatorView.swift */; };
 		68D66DD95E9439F7A7F7877C /* Pods_PADC_IOS_NightLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 533472EA650205DDC56F3243 /* Pods_PADC_IOS_NightLife.framework */; };
 		99C0909421B3AEB1000F6CAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C0909321B3AEB1000F6CAE /* AppDelegate.swift */; };
 		99C0909621B3AEB1000F6CAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C0909521B3AEB1000F6CAE /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 		5A84EB0C21B58255006D3580 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A84EB1521B587EC006D3580 /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
 		5A84EB1721B5892F006D3580 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		5AD8177321B90BD20020CD35 /* LoadingIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorView.swift; sourceTree = "<group>"; };
 		64596ED8E938B8CB490C217D /* Pods-PADC-IOS-NightLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PADC-IOS-NightLife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PADC-IOS-NightLife/Pods-PADC-IOS-NightLife.debug.xcconfig"; sourceTree = "<group>"; };
 		99C0909021B3AEB1000F6CAE /* PADC-IOS-NightLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PADC-IOS-NightLife.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99C0909321B3AEB1000F6CAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +121,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		5AD8177221B90BB10020CD35 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				5AD8177321B90BD20020CD35 /* LoadingIndicatorView.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		99C0908721B3AEB1000F6CAE = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +150,7 @@
 		99C0909221B3AEB1000F6CAE /* PADC-IOS-NightLife */ = {
 			isa = PBXGroup;
 			children = (
+				5AD8177221B90BB10020CD35 /* Helper */,
 				5A84EB1421B587C6006D3580 /* Model */,
 				5A6204D621B54A3A00743880 /* Cell */,
 				5A6204D321B5475D00743880 /* Component */,
@@ -290,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A84EB1621B587EC006D3580 /* MenuModel.swift in Sources */,
+				5AD8177421B90BD20020CD35 /* LoadingIndicatorView.swift in Sources */,
 				5A0C3FB521B5A98C00A59D47 /* BarsViewController.swift in Sources */,
 				5A0C3FB921B5A9FB00A59D47 /* KTVsViewController.swift in Sources */,
 				5A0C3FB321B5A87700A59D47 /* RestaurantsViewController.swift in Sources */,
