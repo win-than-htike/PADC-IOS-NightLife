@@ -17,47 +17,133 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7Nn-pk-wK3">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vra-S1-iex">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Gjl-nj-WQt">
-                                    <size key="itemSize" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.098039215690000001" green="0.1058823529" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kFR-KB-eAd">
+                                    <size key="itemSize" width="375" height="180"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="GkD-53-72Y">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RestaurantCollectionViewCell" id="eZs-J8-p7d" customClass="RestaurantCollectionViewCell" customModule="PADC_IOS_NightLife" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cover-restaurant" translatesAutoresizingMaskIntoConstraints="NO" id="UwK-na-NP6">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0TO-bq-XE6">
+                                                    <rect key="frame" x="16" y="105.5" width="343" height="74.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terminal 5 Bar &amp; Restaurant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFL-zs-0dH">
+                                                            <rect key="frame" x="0.0" y="0.0" width="343" height="27.5"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant &amp; Bar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7V-cX-Nts">
+                                                            <rect key="frame" x="0.0" y="27.5" width="343" height="23.5"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating : 4.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Fq-Du-gLq">
+                                                            <rect key="frame" x="0.0" y="51" width="343" height="23.5"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-MediumOblique" family="Avenir" pointSize="17"/>
+                                                            <color key="textColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="0TO-bq-XE6" secondAttribute="bottom" id="2Cj-mq-ucp"/>
+                                            <constraint firstItem="UwK-na-NP6" firstAttribute="leading" secondItem="eZs-J8-p7d" secondAttribute="leading" id="Ttj-Fh-Axj"/>
+                                            <constraint firstItem="UwK-na-NP6" firstAttribute="top" secondItem="eZs-J8-p7d" secondAttribute="top" id="VfI-hG-r8I"/>
+                                            <constraint firstAttribute="trailing" secondItem="0TO-bq-XE6" secondAttribute="trailing" constant="16" id="ZGH-sz-BYo"/>
+                                            <constraint firstItem="0TO-bq-XE6" firstAttribute="leading" secondItem="eZs-J8-p7d" secondAttribute="leading" constant="16" id="bER-3z-D2X"/>
+                                            <constraint firstAttribute="trailing" secondItem="UwK-na-NP6" secondAttribute="trailing" id="oZk-NT-tr6"/>
+                                            <constraint firstAttribute="bottom" secondItem="UwK-na-NP6" secondAttribute="bottom" id="tIA-aC-VIE"/>
+                                        </constraints>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="7Nn-pk-wK3" firstAttribute="bottom" secondItem="uHq-5d-cKH" secondAttribute="bottom" id="03i-br-OrW"/>
-                            <constraint firstItem="7Nn-pk-wK3" firstAttribute="leading" secondItem="uHq-5d-cKH" secondAttribute="leading" id="68u-Md-IPd"/>
-                            <constraint firstItem="7Nn-pk-wK3" firstAttribute="top" secondItem="uHq-5d-cKH" secondAttribute="top" id="8B5-qj-LVW"/>
-                            <constraint firstItem="7Nn-pk-wK3" firstAttribute="trailing" secondItem="uHq-5d-cKH" secondAttribute="trailing" id="xf7-pG-zIH"/>
+                            <constraint firstItem="vra-S1-iex" firstAttribute="top" secondItem="uHq-5d-cKH" secondAttribute="top" id="4V5-Bd-rJp"/>
+                            <constraint firstItem="vra-S1-iex" firstAttribute="leading" secondItem="uHq-5d-cKH" secondAttribute="leading" id="G9G-bL-yzf"/>
+                            <constraint firstItem="uHq-5d-cKH" firstAttribute="trailing" secondItem="vra-S1-iex" secondAttribute="trailing" id="GRR-UG-X3S"/>
+                            <constraint firstItem="uHq-5d-cKH" firstAttribute="bottom" secondItem="vra-S1-iex" secondAttribute="bottom" id="u7o-py-hd9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uHq-5d-cKH"/>
                     </view>
                     <navigationItem key="navigationItem" title="Restaurant" id="9NU-9b-UK6">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="back" id="alg-qP-Rkq">
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                             <connections>
                                 <action selector="back:" destination="Tik-m0-tdl" id="hqI-Qu-MQw"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="collectionViewRestaurants" destination="vra-S1-iex" id="6AZ-sy-f0U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hjQ-7r-Z2N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1108" y="90.404797601199405"/>
+        </scene>
+        <!--Terminal 5 Restaurant & Bar-->
+        <scene sceneID="zRn-kK-5UQ">
+            <objects>
+                <viewController id="xDB-Iq-mrv" customClass="RestaurantDetailViewController" customModule="PADC_IOS_NightLife" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YN3-Vk-2fR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cover-restaurant" translatesAutoresizingMaskIntoConstraints="NO" id="mAf-0E-KMJ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="7RL-98-ex6"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terminal 5 Bar &amp; Restaurant" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GVC-de-wmq">
+                                <rect key="frame" x="16" y="280" width="343" height="33"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098039215690000001" green="0.1058823529" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="mAf-0E-KMJ" firstAttribute="top" secondItem="LgZ-9W-Xca" secondAttribute="top" id="Cno-ol-pag"/>
+                            <constraint firstItem="GVC-de-wmq" firstAttribute="top" secondItem="mAf-0E-KMJ" secondAttribute="bottom" constant="16" id="HRi-hj-No5"/>
+                            <constraint firstItem="GVC-de-wmq" firstAttribute="leading" secondItem="LgZ-9W-Xca" secondAttribute="leading" constant="16" id="Mpo-76-68r"/>
+                            <constraint firstItem="mAf-0E-KMJ" firstAttribute="leading" secondItem="LgZ-9W-Xca" secondAttribute="leading" id="NHX-Ft-hYX"/>
+                            <constraint firstItem="LgZ-9W-Xca" firstAttribute="trailing" secondItem="mAf-0E-KMJ" secondAttribute="trailing" id="bze-YA-cnz"/>
+                            <constraint firstItem="LgZ-9W-Xca" firstAttribute="trailing" secondItem="GVC-de-wmq" secondAttribute="trailing" constant="16" id="nIZ-o5-gdL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LgZ-9W-Xca"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Terminal 5 Restaurant &amp; Bar" id="6wZ-CP-tKP">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="back" id="PZ9-7H-xHi">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="back:" destination="xDB-Iq-mrv" id="emU-SH-FjH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vLR-3a-0EL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2909.5999999999999" y="88.605697151424295"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xaw-74-Kx1">
@@ -77,8 +163,27 @@
             </objects>
             <point key="canvasLocation" x="168.80000000000001" y="90.404797601199405"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hCu-MD-Hju">
+            <objects>
+                <navigationController storyboardIdentifier="RestaurantDetailViewController" automaticallyAdjustsScrollViewInsets="NO" id="Mz9-c9-PS9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="r1H-mh-fkE">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xDB-Iq-mrv" kind="relationship" relationship="rootViewController" id="GEk-jK-afz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bmc-dr-QKu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1970.4000000000001" y="88.605697151424295"/>
+        </scene>
     </scenes>
     <resources>
         <image name="back" width="32" height="32"/>
+        <image name="cover-restaurant" width="750" height="375"/>
     </resources>
 </document>
