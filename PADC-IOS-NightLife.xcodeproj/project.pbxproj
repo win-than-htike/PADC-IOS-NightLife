@@ -457,13 +457,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 84S78N95ZC;
+				DEVELOPMENT_TEAM = 3976WP7P66;
 				INFOPLIST_FILE = "PADC-IOS-NightLife/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.padcmyanmar.PADC-IOS-NightLife";
+				PRODUCT_BUNDLE_IDENTIFIER = com.padcmyanmar.padcnightlife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -476,13 +476,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 84S78N95ZC;
+				DEVELOPMENT_TEAM = 3976WP7P66;
 				INFOPLIST_FILE = "PADC-IOS-NightLife/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.padcmyanmar.PADC-IOS-NightLife";
+				PRODUCT_BUNDLE_IDENTIFIER = com.padcmyanmar.padcnightlife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
