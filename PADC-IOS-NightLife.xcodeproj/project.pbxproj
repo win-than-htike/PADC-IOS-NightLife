@@ -19,6 +19,8 @@
 		3B7B293E21C15ADD00EA0597 /* Peak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B293D21C15ADD00EA0597 /* Peak.swift */; };
 		3B7B294021C15B5600EA0597 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B293F21C15B5600EA0597 /* Photo.swift */; };
 		3B7B294221C15C3A00EA0597 /* Promotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B294121C15C3A00EA0597 /* Promotion.swift */; };
+		3B7B294421C169C300EA0597 /* Hotels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B294321C169C300EA0597 /* Hotels.swift */; };
+		3B7B294621C16ADD00EA0597 /* Places.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B294521C16ADD00EA0597 /* Places.swift */; };
 		5A0C3FAB21B5A81000A59D47 /* Restaurant.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0C3FAA21B5A80F00A59D47 /* Restaurant.storyboard */; };
 		5A0C3FAD21B5A81F00A59D47 /* Bar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0C3FAC21B5A81F00A59D47 /* Bar.storyboard */; };
 		5A0C3FAF21B5A82D00A59D47 /* Club.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0C3FAE21B5A82D00A59D47 /* Club.storyboard */; };
@@ -54,6 +56,8 @@
 		3B7B293D21C15ADD00EA0597 /* Peak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peak.swift; sourceTree = "<group>"; };
 		3B7B293F21C15B5600EA0597 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		3B7B294121C15C3A00EA0597 /* Promotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promotion.swift; sourceTree = "<group>"; };
+		3B7B294321C169C300EA0597 /* Hotels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotels.swift; sourceTree = "<group>"; };
+		3B7B294521C16ADD00EA0597 /* Places.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Places.swift; sourceTree = "<group>"; };
 		533472EA650205DDC56F3243 /* Pods_PADC_IOS_NightLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PADC_IOS_NightLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A0C3FAA21B5A80F00A59D47 /* Restaurant.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Restaurant.storyboard; sourceTree = "<group>"; };
 		5A0C3FAC21B5A81F00A59D47 /* Bar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Bar.storyboard; sourceTree = "<group>"; };
@@ -108,6 +112,8 @@
 				3B7B293D21C15ADD00EA0597 /* Peak.swift */,
 				3B7B293F21C15B5600EA0597 /* Photo.swift */,
 				3B7B294121C15C3A00EA0597 /* Promotion.swift */,
+				3B7B294321C169C300EA0597 /* Hotels.swift */,
+				3B7B294521C16ADD00EA0597 /* Places.swift */,
 			);
 			path = VO;
 			sourceTree = "<group>";
@@ -372,6 +378,7 @@
 				3B40739B21BEB20E0022EAC6 /* EventsViewController.swift in Sources */,
 				5A6204D521B5477200743880 /* CardView.swift in Sources */,
 				5AD8177621B935700020CD35 /* RestaurantCollectionViewCell.swift in Sources */,
+				3B7B294421C169C300EA0597 /* Hotels.swift in Sources */,
 				99C0909421B3AEB1000F6CAE /* AppDelegate.swift in Sources */,
 				3B7B293E21C15ADD00EA0597 /* Peak.swift in Sources */,
 				3B7B293C21C159ED00EA0597 /* Review.swift in Sources */,
@@ -380,6 +387,7 @@
 				3B7B294221C15C3A00EA0597 /* Promotion.swift in Sources */,
 				5A0ED04221BE1AEA0046B93B /* RestaurantDetailViewController.swift in Sources */,
 				5A84EB1821B5892F006D3580 /* MenuCollectionViewCell.swift in Sources */,
+				3B7B294621C16ADD00EA0597 /* Places.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
