@@ -70,7 +70,7 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
             break
             
         case 2:
-            let navigationController = UIStoryboard(name: "Club", bundle: nil).instantiateViewController(withIdentifier: "ClubsViewController") as! UINavigationController
+            let navigationController = UIStoryboard(name: "Event", bundle: nil).instantiateViewController(withIdentifier: "EventsViewController") as! UINavigationController
             self.present(navigationController, animated: true, completion: nil)
             break
             

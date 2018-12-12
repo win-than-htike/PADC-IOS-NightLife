@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B40739921BEB13C0022EAC6 /* Event.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B40739821BEB13C0022EAC6 /* Event.storyboard */; };
+		3B40739B21BEB20E0022EAC6 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B40739A21BEB20E0022EAC6 /* EventsViewController.swift */; };
+		3B40739E21BEB4950022EAC6 /* EventsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B40739C21BEB4950022EAC6 /* EventsCollectionViewCell.swift */; };
+		3B40739F21BEB4950022EAC6 /* EventsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B40739D21BEB4950022EAC6 /* EventsCollectionViewCell.xib */; };
+		3B4073A121BEBE5D0022EAC6 /* CellRegisterUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4073A021BEBE5D0022EAC6 /* CellRegisterUtils.swift */; };
+		3B7B293421C1502300EA0597 /* EventsDetailViewControlerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B293321C1502300EA0597 /* EventsDetailViewControlerViewController.swift */; };
+		3B7B293621C151A100EA0597 /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B293521C151A100EA0597 /* System.swift */; };
+		3B7B293A21C1564A00EA0597 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B293921C1564A00EA0597 /* Shop.swift */; };
+		3B7B293C21C159ED00EA0597 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B293B21C159ED00EA0597 /* Review.swift */; };
+		3B7B293E21C15ADD00EA0597 /* Peak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B293D21C15ADD00EA0597 /* Peak.swift */; };
+		3B7B294021C15B5600EA0597 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B293F21C15B5600EA0597 /* Photo.swift */; };
+		3B7B294221C15C3A00EA0597 /* Promotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B294121C15C3A00EA0597 /* Promotion.swift */; };
 		5A0C3FAB21B5A81000A59D47 /* Restaurant.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0C3FAA21B5A80F00A59D47 /* Restaurant.storyboard */; };
 		5A0C3FAD21B5A81F00A59D47 /* Bar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0C3FAC21B5A81F00A59D47 /* Bar.storyboard */; };
 		5A0C3FAF21B5A82D00A59D47 /* Club.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0C3FAE21B5A82D00A59D47 /* Club.storyboard */; };
@@ -30,6 +42,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B40739821BEB13C0022EAC6 /* Event.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Event.storyboard; sourceTree = "<group>"; };
+		3B40739A21BEB20E0022EAC6 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		3B40739C21BEB4950022EAC6 /* EventsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsCollectionViewCell.swift; sourceTree = "<group>"; };
+		3B40739D21BEB4950022EAC6 /* EventsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventsCollectionViewCell.xib; sourceTree = "<group>"; };
+		3B4073A021BEBE5D0022EAC6 /* CellRegisterUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellRegisterUtils.swift; sourceTree = "<group>"; };
+		3B7B293321C1502300EA0597 /* EventsDetailViewControlerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsDetailViewControlerViewController.swift; sourceTree = "<group>"; };
+		3B7B293521C151A100EA0597 /* System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
+		3B7B293921C1564A00EA0597 /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
+		3B7B293B21C159ED00EA0597 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		3B7B293D21C15ADD00EA0597 /* Peak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peak.swift; sourceTree = "<group>"; };
+		3B7B293F21C15B5600EA0597 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		3B7B294121C15C3A00EA0597 /* Promotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promotion.swift; sourceTree = "<group>"; };
 		533472EA650205DDC56F3243 /* Pods_PADC_IOS_NightLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PADC_IOS_NightLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A0C3FAA21B5A80F00A59D47 /* Restaurant.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Restaurant.storyboard; sourceTree = "<group>"; };
 		5A0C3FAC21B5A81F00A59D47 /* Bar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Bar.storyboard; sourceTree = "<group>"; };
@@ -76,6 +100,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3B7B293821C1560D00EA0597 /* VO */ = {
+			isa = PBXGroup;
+			children = (
+				3B7B293921C1564A00EA0597 /* Shop.swift */,
+				3B7B293B21C159ED00EA0597 /* Review.swift */,
+				3B7B293D21C15ADD00EA0597 /* Peak.swift */,
+				3B7B293F21C15B5600EA0597 /* Photo.swift */,
+				3B7B294121C15C3A00EA0597 /* Promotion.swift */,
+			);
+			path = VO;
+			sourceTree = "<group>";
+		};
 		5A6204D121B5470300743880 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +121,7 @@
 				5A0C3FAC21B5A81F00A59D47 /* Bar.storyboard */,
 				5A0C3FAE21B5A82D00A59D47 /* Club.storyboard */,
 				5A0C3FB021B5A83B00A59D47 /* KTV.storyboard */,
+				3B40739821BEB13C0022EAC6 /* Event.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -98,6 +135,8 @@
 				5A0C3FB621B5A9CE00A59D47 /* ClubsViewController.swift */,
 				5A0C3FB821B5A9FB00A59D47 /* KTVsViewController.swift */,
 				5A0ED04121BE1AEA0046B93B /* RestaurantDetailViewController.swift */,
+				3B40739A21BEB20E0022EAC6 /* EventsViewController.swift */,
+				3B7B293321C1502300EA0597 /* EventsDetailViewControlerViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -115,6 +154,8 @@
 			children = (
 				5A84EB1721B5892F006D3580 /* MenuCollectionViewCell.swift */,
 				5AD8177521B935700020CD35 /* RestaurantCollectionViewCell.swift */,
+				3B40739C21BEB4950022EAC6 /* EventsCollectionViewCell.swift */,
+				3B40739D21BEB4950022EAC6 /* EventsCollectionViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -122,6 +163,7 @@
 		5A84EB1421B587C6006D3580 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3B7B293821C1560D00EA0597 /* VO */,
 				5A84EB1521B587EC006D3580 /* MenuModel.swift */,
 			);
 			path = Model;
@@ -131,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				5AD8177321B90BD20020CD35 /* LoadingIndicatorView.swift */,
+				3B4073A021BEBE5D0022EAC6 /* CellRegisterUtils.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -165,6 +208,7 @@
 				99C0909321B3AEB1000F6CAE /* AppDelegate.swift */,
 				99C0909F21B3AEB3000F6CAE /* Info.plist */,
 				5A84EB0C21B58255006D3580 /* Assets.xcassets */,
+				3B7B293521C151A100EA0597 /* System.swift */,
 			);
 			path = "PADC-IOS-NightLife";
 			sourceTree = "<group>";
@@ -239,6 +283,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A0C3FAF21B5A82D00A59D47 /* Club.storyboard in Resources */,
+				3B40739F21BEB4950022EAC6 /* EventsCollectionViewCell.xib in Resources */,
+				3B40739921BEB13C0022EAC6 /* Event.storyboard in Resources */,
 				99C0909E21B3AEB3000F6CAE /* LaunchScreen.storyboard in Resources */,
 				5A0C3FAB21B5A81000A59D47 /* Restaurant.storyboard in Resources */,
 				5A0C3FAD21B5A81F00A59D47 /* Bar.storyboard in Resources */,
@@ -282,7 +328,10 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PADC-IOS-NightLife/Pods-PADC-IOS-NightLife-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -290,7 +339,10 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -306,16 +358,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B7B294021C15B5600EA0597 /* Photo.swift in Sources */,
 				5A84EB1621B587EC006D3580 /* MenuModel.swift in Sources */,
 				5AD8177421B90BD20020CD35 /* LoadingIndicatorView.swift in Sources */,
+				3B7B293621C151A100EA0597 /* System.swift in Sources */,
+				3B7B293421C1502300EA0597 /* EventsDetailViewControlerViewController.swift in Sources */,
 				5A0C3FB521B5A98C00A59D47 /* BarsViewController.swift in Sources */,
+				3B4073A121BEBE5D0022EAC6 /* CellRegisterUtils.swift in Sources */,
 				5A0C3FB921B5A9FB00A59D47 /* KTVsViewController.swift in Sources */,
 				5A0C3FB321B5A87700A59D47 /* RestaurantsViewController.swift in Sources */,
 				99C0909621B3AEB1000F6CAE /* ViewController.swift in Sources */,
 				5A0C3FB721B5A9CE00A59D47 /* ClubsViewController.swift in Sources */,
+				3B40739B21BEB20E0022EAC6 /* EventsViewController.swift in Sources */,
 				5A6204D521B5477200743880 /* CardView.swift in Sources */,
 				5AD8177621B935700020CD35 /* RestaurantCollectionViewCell.swift in Sources */,
 				99C0909421B3AEB1000F6CAE /* AppDelegate.swift in Sources */,
+				3B7B293E21C15ADD00EA0597 /* Peak.swift in Sources */,
+				3B7B293C21C159ED00EA0597 /* Review.swift in Sources */,
+				3B40739E21BEB4950022EAC6 /* EventsCollectionViewCell.swift in Sources */,
+				3B7B293A21C1564A00EA0597 /* Shop.swift in Sources */,
+				3B7B294221C15C3A00EA0597 /* Promotion.swift in Sources */,
 				5A0ED04221BE1AEA0046B93B /* RestaurantDetailViewController.swift in Sources */,
 				5A84EB1821B5892F006D3580 /* MenuCollectionViewCell.swift in Sources */,
 			);

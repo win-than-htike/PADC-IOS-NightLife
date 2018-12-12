@@ -6,7 +6,9 @@ target 'PADC-IOS-NightLife' do
   use_frameworks!
 
   # Pods for PADC-IOS-NightLife
-pod 'Firebase/Core'
-pod 'SDWebImage'
+  pod 'Firebase/Core'
+  pod 'SDWebImage'
+  pod 'RealmSwift'
+  pod 'Cosmos', '~> 17.0'
 
 end

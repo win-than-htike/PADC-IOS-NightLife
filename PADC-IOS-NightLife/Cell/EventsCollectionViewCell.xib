@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EventsCollectionViewCell" id="gTV-IL-0wX" customClass="EventsCollectionViewCell" customModule="PADC_IOS_NightLife" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="322" height="196"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="322" height="196"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BcK-8Y-TRn">
+                        <rect key="frame" x="0.0" y="0.0" width="322" height="196"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cover-restaurant" translatesAutoresizingMaskIntoConstraints="NO" id="tMd-z1-xdQ">
+                                <rect key="frame" x="0.0" y="0.0" width="322" height="196"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Icon Cross Night" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEr-Er-KsF">
+                                <rect key="frame" x="16" y="26" width="290" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="CD3-kL-UBn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEf-Gj-1I4">
+                                <rect key="frame" x="16" y="51" width="290" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="1im-mH-gkZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Yv-vz-OAF" customClass="CosmosView" customModule="Cosmos">
+                                <rect key="frame" x="16" y="76" width="140" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="9tL-fK-JXP"/>
+                                    <constraint firstAttribute="height" constant="14" id="qsN-gi-akR"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="3.7000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                        <color key="value" red="1" green="0.86715020740000004" blue="0.16849220240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                        <color key="value" red="1" green="0.86715020740000004" blue="0.16849220240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0Yv-vz-OAF" firstAttribute="leading" secondItem="BcK-8Y-TRn" secondAttribute="leading" constant="16" id="Dwk-71-oNh"/>
+                            <constraint firstItem="tMd-z1-xdQ" firstAttribute="top" secondItem="BcK-8Y-TRn" secondAttribute="top" id="G5j-8Y-RmD"/>
+                            <constraint firstItem="FEf-Gj-1I4" firstAttribute="top" secondItem="hEr-Er-KsF" secondAttribute="bottom" constant="4" id="Lem-Oo-Cod"/>
+                            <constraint firstAttribute="trailing" secondItem="tMd-z1-xdQ" secondAttribute="trailing" id="Odm-5p-atX"/>
+                            <constraint firstAttribute="bottom" secondItem="tMd-z1-xdQ" secondAttribute="bottom" id="R8d-Jd-wo0"/>
+                            <constraint firstItem="0Yv-vz-OAF" firstAttribute="top" secondItem="FEf-Gj-1I4" secondAttribute="bottom" constant="4" id="fXP-Bo-yAb"/>
+                            <constraint firstAttribute="trailing" secondItem="FEf-Gj-1I4" secondAttribute="trailing" constant="16" id="gaI-dX-e5H"/>
+                            <constraint firstAttribute="trailing" secondItem="hEr-Er-KsF" secondAttribute="trailing" constant="16" id="kTu-fe-RJ1"/>
+                            <constraint firstItem="tMd-z1-xdQ" firstAttribute="leading" secondItem="BcK-8Y-TRn" secondAttribute="leading" id="okN-t4-5zG"/>
+                            <constraint firstItem="hEr-Er-KsF" firstAttribute="leading" secondItem="BcK-8Y-TRn" secondAttribute="leading" constant="16" id="p2r-w6-wvR"/>
+                            <constraint firstItem="FEf-Gj-1I4" firstAttribute="leading" secondItem="BcK-8Y-TRn" secondAttribute="leading" constant="16" id="q5g-ej-20h"/>
+                            <constraint firstItem="hEr-Er-KsF" firstAttribute="top" secondItem="BcK-8Y-TRn" secondAttribute="top" constant="26" id="rR5-3q-6GD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="BcK-8Y-TRn" secondAttribute="trailing" id="5Tv-os-o3g"/>
+                <constraint firstItem="BcK-8Y-TRn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="DUb-47-VV3"/>
+                <constraint firstAttribute="bottom" secondItem="BcK-8Y-TRn" secondAttribute="bottom" id="PnU-gG-TFY"/>
+                <constraint firstItem="BcK-8Y-TRn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="fjx-Zk-Waw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="324" height="196"/>
+            <connections>
+                <outlet property="ivEventCover" destination="tMd-z1-xdQ" id="E2z-el-tdX"/>
+                <outlet property="lblEventTitle" destination="hEr-Er-KsF" id="NbN-tN-JPT"/>
+                <outlet property="lblEventType" destination="FEf-Gj-1I4" id="sfv-66-uQc"/>
+                <outlet property="rating" destination="0Yv-vz-OAF" id="BtQ-h1-tEx"/>
+            </connections>
+            <point key="canvasLocation" x="128" y="153.82308845577214"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="cover-restaurant" width="750" height="375"/>
+    </resources>
+</document>
