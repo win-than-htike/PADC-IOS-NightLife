@@ -36,6 +36,10 @@
 		5A84EB1821B5892F006D3580 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A84EB1721B5892F006D3580 /* MenuCollectionViewCell.swift */; };
 		5AD8177421B90BD20020CD35 /* LoadingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD8177321B90BD20020CD35 /* LoadingIndicatorView.swift */; };
 		5AD8177621B935700020CD35 /* RestaurantCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD8177521B935700020CD35 /* RestaurantCollectionViewCell.swift */; };
+		5AE80EC121C2651A000323F5 /* BarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE80EBF21C2651A000323F5 /* BarCollectionViewCell.swift */; };
+		5AE80EC221C2651A000323F5 /* BarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AE80EC021C2651A000323F5 /* BarCollectionViewCell.xib */; };
+		5AFA28C521C246240093DC9A /* BarPromotionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFA28C321C246240093DC9A /* BarPromotionCollectionViewCell.swift */; };
+		5AFA28C621C246240093DC9A /* BarPromotionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AFA28C421C246240093DC9A /* BarPromotionCollectionViewCell.xib */; };
 		5AFA967321C21BF800370A2B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5AFA967221C21BF800370A2B /* GoogleService-Info.plist */; };
 		5AFA967521C2299600370A2B /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AFA967421C2299600370A2B /* Search.storyboard */; };
 		5AFA967721C22ABC00370A2B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFA967621C22ABC00370A2B /* SearchViewController.swift */; };
@@ -77,6 +81,10 @@
 		5A84EB1721B5892F006D3580 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		5AD8177321B90BD20020CD35 /* LoadingIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorView.swift; sourceTree = "<group>"; };
 		5AD8177521B935700020CD35 /* RestaurantCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCollectionViewCell.swift; sourceTree = "<group>"; };
+		5AE80EBF21C2651A000323F5 /* BarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCollectionViewCell.swift; sourceTree = "<group>"; };
+		5AE80EC021C2651A000323F5 /* BarCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BarCollectionViewCell.xib; sourceTree = "<group>"; };
+		5AFA28C321C246240093DC9A /* BarPromotionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarPromotionCollectionViewCell.swift; sourceTree = "<group>"; };
+		5AFA28C421C246240093DC9A /* BarPromotionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BarPromotionCollectionViewCell.xib; sourceTree = "<group>"; };
 		5AFA967221C21BF800370A2B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5AFA967421C2299600370A2B /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		5AFA967621C22ABC00370A2B /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -170,6 +178,10 @@
 				5AD8177521B935700020CD35 /* RestaurantCollectionViewCell.swift */,
 				3B40739C21BEB4950022EAC6 /* EventsCollectionViewCell.swift */,
 				3B40739D21BEB4950022EAC6 /* EventsCollectionViewCell.xib */,
+				5AFA28C321C246240093DC9A /* BarPromotionCollectionViewCell.swift */,
+				5AFA28C421C246240093DC9A /* BarPromotionCollectionViewCell.xib */,
+				5AE80EBF21C2651A000323F5 /* BarCollectionViewCell.swift */,
+				5AE80EC021C2651A000323F5 /* BarCollectionViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -299,6 +311,8 @@
 			files = (
 				5A0C3FAF21B5A82D00A59D47 /* Club.storyboard in Resources */,
 				3B40739F21BEB4950022EAC6 /* EventsCollectionViewCell.xib in Resources */,
+				5AE80EC221C2651A000323F5 /* BarCollectionViewCell.xib in Resources */,
+				5AFA28C621C246240093DC9A /* BarPromotionCollectionViewCell.xib in Resources */,
 				3B40739921BEB13C0022EAC6 /* Event.storyboard in Resources */,
 				99C0909E21B3AEB3000F6CAE /* LaunchScreen.storyboard in Resources */,
 				5A0C3FAB21B5A81000A59D47 /* Restaurant.storyboard in Resources */,
@@ -389,6 +403,8 @@
 				3B40739B21BEB20E0022EAC6 /* EventsViewController.swift in Sources */,
 				5A6204D521B5477200743880 /* CardView.swift in Sources */,
 				5AD8177621B935700020CD35 /* RestaurantCollectionViewCell.swift in Sources */,
+				5AE80EC121C2651A000323F5 /* BarCollectionViewCell.swift in Sources */,
+				5AFA28C521C246240093DC9A /* BarPromotionCollectionViewCell.swift in Sources */,
 				3B7B294421C169C300EA0597 /* Hotels.swift in Sources */,
 				5AFA967721C22ABC00370A2B /* SearchViewController.swift in Sources */,
 				99C0909421B3AEB1000F6CAE /* AppDelegate.swift in Sources */,
