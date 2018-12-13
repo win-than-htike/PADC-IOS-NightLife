@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var collectionViewMenu: UICollectionView!
+    @IBOutlet weak var tfSearch: UITextField!
     var estimateWidth = 160.0
     var cellMarginSize = 16.0
     
@@ -26,6 +27,14 @@ class ViewController: UIViewController {
         
         self.setUpCollectionView()
         self.setupGridView()
+        
+        tfSearch.isUserInteractionEnabled = true
+        tfSearch.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.searchTap(gesture:))))
+    }
+    
+    @objc func searchTap(gesture : UITapGestureRecognizer){
+        let navigationController = UIStoryboard(name: "Search", bundle: nil).instantiateViewController(withIdentifier: "SearchViewController") as! UINavigationController
+        self.present(navigationController, animated: true, completion: nil)
     }
     
     func setUpCollectionView() {

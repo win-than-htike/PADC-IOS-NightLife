@@ -181,6 +181,7 @@
                     </view>
                     <connections>
                         <outlet property="collectionViewMenu" destination="wkx-pI-N3E" id="bbT-Fx-RHk"/>
+                        <outlet property="tfSearch" destination="liN-gJ-CNq" id="QBe-Qk-LIA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

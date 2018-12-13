@@ -36,6 +36,9 @@
 		5A84EB1821B5892F006D3580 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A84EB1721B5892F006D3580 /* MenuCollectionViewCell.swift */; };
 		5AD8177421B90BD20020CD35 /* LoadingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD8177321B90BD20020CD35 /* LoadingIndicatorView.swift */; };
 		5AD8177621B935700020CD35 /* RestaurantCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD8177521B935700020CD35 /* RestaurantCollectionViewCell.swift */; };
+		5AFA967321C21BF800370A2B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5AFA967221C21BF800370A2B /* GoogleService-Info.plist */; };
+		5AFA967521C2299600370A2B /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AFA967421C2299600370A2B /* Search.storyboard */; };
+		5AFA967721C22ABC00370A2B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFA967621C22ABC00370A2B /* SearchViewController.swift */; };
 		68D66DD95E9439F7A7F7877C /* Pods_PADC_IOS_NightLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 533472EA650205DDC56F3243 /* Pods_PADC_IOS_NightLife.framework */; };
 		99C0909421B3AEB1000F6CAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C0909321B3AEB1000F6CAE /* AppDelegate.swift */; };
 		99C0909621B3AEB1000F6CAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C0909521B3AEB1000F6CAE /* ViewController.swift */; };
@@ -74,6 +77,9 @@
 		5A84EB1721B5892F006D3580 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		5AD8177321B90BD20020CD35 /* LoadingIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorView.swift; sourceTree = "<group>"; };
 		5AD8177521B935700020CD35 /* RestaurantCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCollectionViewCell.swift; sourceTree = "<group>"; };
+		5AFA967221C21BF800370A2B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5AFA967421C2299600370A2B /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		5AFA967621C22ABC00370A2B /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		64596ED8E938B8CB490C217D /* Pods-PADC-IOS-NightLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PADC-IOS-NightLife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PADC-IOS-NightLife/Pods-PADC-IOS-NightLife.debug.xcconfig"; sourceTree = "<group>"; };
 		99C0909021B3AEB1000F6CAE /* PADC-IOS-NightLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PADC-IOS-NightLife.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99C0909321B3AEB1000F6CAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +134,7 @@
 				5A0C3FAE21B5A82D00A59D47 /* Club.storyboard */,
 				5A0C3FB021B5A83B00A59D47 /* KTV.storyboard */,
 				3B40739821BEB13C0022EAC6 /* Event.storyboard */,
+				5AFA967421C2299600370A2B /* Search.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -143,6 +150,7 @@
 				5A0ED04121BE1AEA0046B93B /* RestaurantDetailViewController.swift */,
 				3B40739A21BEB20E0022EAC6 /* EventsViewController.swift */,
 				3B7B293321C1502300EA0597 /* EventsDetailViewControlerViewController.swift */,
+				5AFA967621C22ABC00370A2B /* SearchViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -213,6 +221,7 @@
 				5A6204D121B5470300743880 /* Storyboard */,
 				99C0909321B3AEB1000F6CAE /* AppDelegate.swift */,
 				99C0909F21B3AEB3000F6CAE /* Info.plist */,
+				5AFA967221C21BF800370A2B /* GoogleService-Info.plist */,
 				5A84EB0C21B58255006D3580 /* Assets.xcassets */,
 				3B7B293521C151A100EA0597 /* System.swift */,
 			);
@@ -295,6 +304,8 @@
 				5A0C3FAB21B5A81000A59D47 /* Restaurant.storyboard in Resources */,
 				5A0C3FAD21B5A81F00A59D47 /* Bar.storyboard in Resources */,
 				5A0C3FB121B5A83B00A59D47 /* KTV.storyboard in Resources */,
+				5AFA967521C2299600370A2B /* Search.storyboard in Resources */,
+				5AFA967321C21BF800370A2B /* GoogleService-Info.plist in Resources */,
 				5A84EB0D21B58255006D3580 /* Assets.xcassets in Resources */,
 				99C0909921B3AEB1000F6CAE /* Main.storyboard in Resources */,
 			);
@@ -379,6 +390,7 @@
 				5A6204D521B5477200743880 /* CardView.swift in Sources */,
 				5AD8177621B935700020CD35 /* RestaurantCollectionViewCell.swift in Sources */,
 				3B7B294421C169C300EA0597 /* Hotels.swift in Sources */,
+				5AFA967721C22ABC00370A2B /* SearchViewController.swift in Sources */,
 				99C0909421B3AEB1000F6CAE /* AppDelegate.swift in Sources */,
 				3B7B293E21C15ADD00EA0597 /* Peak.swift in Sources */,
 				3B7B293C21C159ED00EA0597 /* Review.swift in Sources */,
@@ -535,7 +547,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3976WP7P66;
+				DEVELOPMENT_TEAM = J6G3B8J7V8;
 				INFOPLIST_FILE = "PADC-IOS-NightLife/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -554,7 +566,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3976WP7P66;
+				DEVELOPMENT_TEAM = J6G3B8J7V8;
 				INFOPLIST_FILE = "PADC-IOS-NightLife/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

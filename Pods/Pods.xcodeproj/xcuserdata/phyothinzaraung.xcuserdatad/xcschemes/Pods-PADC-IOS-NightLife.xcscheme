@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "883BCB78404DA8C90AA5A2490F540933"
+               BlueprintIdentifier = "9872772A8415C229305787A80B2753D8"
                BuildableName = "Pods_PADC_IOS_NightLife.framework"
                BlueprintName = "Pods-PADC-IOS-NightLife"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "883BCB78404DA8C90AA5A2490F540933"
+            BlueprintIdentifier = "9872772A8415C229305787A80B2753D8"
             BuildableName = "Pods_PADC_IOS_NightLife.framework"
             BlueprintName = "Pods-PADC-IOS-NightLife"
             ReferencedContainer = "container:Pods.xcodeproj">
