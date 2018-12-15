@@ -14,6 +14,9 @@ class ClubsViewController: UIViewController {
     @IBAction func back(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
+    
+    var clubList : [PlaceVO] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +24,19 @@ class ClubsViewController: UIViewController {
         collectionViewClub.dataSource = self
 
         registerCell()
+        
+        LoadingIndicatorView.show("Loading")
+        
+        DataModel.shared.getPlaces(type: "club", success: { (data) in
+            
+            self.clubList.removeAll()
+            self.clubList.append(contentsOf: data)
+            self.collectionViewClub.reloadData()
+            
+            LoadingIndicatorView.hide()
+        }, failure: {
+            
+        })
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -42,7 +58,7 @@ extension ClubsViewController : UICollectionViewDataSource {
         if section == 0 {
             return 1
         }else {
-            return 10
+            return clubList.count
         }
     }
     
@@ -53,6 +69,13 @@ extension ClubsViewController : UICollectionViewDataSource {
             return cell
         }else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
+            
+            let club = self.clubList[indexPath.row]
+            cell.lblShopName.text = club.shopName
+            cell.lblShopType.text = club.shopType
+            cell.lblRating.text = "Rating: " + club.rating
+            cell.imgShop.sd_setImage(with: URL(string: club.shopImage), placeholderImage: UIImage(named: "no-image"))
+            
             return cell
         }
     }
@@ -76,7 +99,10 @@ extension ClubsViewController : UICollectionViewDelegateFlowLayout, UICollection
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let club = clubList[indexPath.row]
         let navigationController = UIStoryboard(name: "Details", bundle: nil).instantiateViewController(withIdentifier: "DetailsViewController") as! UINavigationController
+        let vc = navigationController.viewControllers[0] as! DetailsViewController
+        vc.shop = club
         self.present(navigationController, animated: true, completion: nil)
     }
 }

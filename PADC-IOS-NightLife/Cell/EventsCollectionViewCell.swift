@@ -16,6 +16,8 @@ class EventsCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var lblEventType: UILabel!
     @IBOutlet weak var rating: CosmosView!
     
+    var promoList: [PlaceVO] = []
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

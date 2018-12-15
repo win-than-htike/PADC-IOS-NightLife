@@ -14,6 +14,9 @@ class KTVsViewController: UIViewController {
     @IBAction func back(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
+    
+    var ktvList : [PlaceVO] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +24,19 @@ class KTVsViewController: UIViewController {
         collectionViewKTV.dataSource = self
         
         registerCell()
+        
+        LoadingIndicatorView.show("Loading")
+        
+        DataModel.shared.getPlaces(type: "ktv", success: { (data) in
+            
+            self.ktvList.removeAll()
+            self.ktvList.append(contentsOf: data)
+            self.collectionViewKTV.reloadData()
+            
+            LoadingIndicatorView.hide()
+        }, failure: {
+            
+        })
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -43,7 +59,7 @@ extension KTVsViewController : UICollectionViewDataSource {
         if section == 0 {
             return 1
         }else {
-            return 10
+            return ktvList.count
         }
     }
     
@@ -54,6 +70,13 @@ extension KTVsViewController : UICollectionViewDataSource {
             return cell
         }else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
+            
+            let ktv = self.ktvList[indexPath.row]
+            cell.lblShopName.text = ktv.shopName
+            cell.lblShopType.text = ktv.shopType
+            cell.lblRating.text = "Rating: " + ktv.rating
+            cell.imgShop.sd_setImage(with: URL(string: ktv.shopImage), placeholderImage: UIImage(named: "no-image"))
+            
             return cell
         }
     }
@@ -74,7 +97,10 @@ extension KTVsViewController : UICollectionViewDelegateFlowLayout, UICollectionV
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let ktv = ktvList[indexPath.row]
         let navigationController = UIStoryboard(name: "Details", bundle: nil).instantiateViewController(withIdentifier: "DetailsViewController") as! UINavigationController
+        let vc = navigationController.viewControllers[0] as! DetailsViewController
+        vc.shop = ktv
         self.present(navigationController, animated: true, completion: nil)
     }
 }

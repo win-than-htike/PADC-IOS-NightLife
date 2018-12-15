@@ -12,5 +12,8 @@ target 'PADC-IOS-NightLife' do
   pod 'Cosmos', '~> 17.0'
   pod 'GoogleMaps'
   pod 'GooglePlaces'
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'Firebase/Storage'
 
 end

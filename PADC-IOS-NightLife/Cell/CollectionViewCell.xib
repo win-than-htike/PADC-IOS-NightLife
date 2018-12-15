@@ -21,7 +21,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rXf-w4-bEO">
                         <rect key="frame" x="0.0" y="0.0" width="289" height="195"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cover-restaurant" translatesAutoresizingMaskIntoConstraints="NO" id="ACO-tX-ZPa">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no-image-available" translatesAutoresizingMaskIntoConstraints="NO" id="ACO-tX-ZPa">
                                 <rect key="frame" x="0.0" y="0.0" width="289" height="195"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eNP-dw-wnR">
@@ -87,10 +87,16 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="289" height="195"/>
+            <connections>
+                <outlet property="imgShop" destination="ACO-tX-ZPa" id="tLJ-vk-6be"/>
+                <outlet property="lblRating" destination="Qmi-cp-wCC" id="uaY-Hj-a5C"/>
+                <outlet property="lblShopName" destination="NrO-Vi-tge" id="4WR-YZ-GFj"/>
+                <outlet property="lblShopType" destination="YDe-Z0-gue" id="ySt-gh-tMK"/>
+            </connections>
             <point key="canvasLocation" x="328.80000000000001" y="215.44227886056973"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="cover-restaurant" width="750" height="375"/>
+        <image name="no-image-available" width="690" height="300"/>
     </resources>
 </document>

@@ -15,7 +15,10 @@ protocol PromotionDelegate {
 class PromotionCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var collectionViewEventPromotion: UICollectionView!
+    
     var delegate : PromotionDelegate?
+    
+    var promoList : [PlaceVO] = []
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -39,6 +42,7 @@ extension PromotionCollectionViewCell : UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "EventsCollectionViewCell", for: indexPath) as! EventsCollectionViewCell
+        cell.promoList = self.promoList
         return cell
     }
     

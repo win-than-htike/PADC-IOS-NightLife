@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class RestaurantsViewController: UIViewController {
 
@@ -15,6 +16,9 @@ class RestaurantsViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
+    var restaurantList : [PlaceVO] = []
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +26,19 @@ class RestaurantsViewController: UIViewController {
         collectionViewRestaurants.dataSource = self
         
         registerCell()
+        
+        LoadingIndicatorView.show("Loading")
+        
+        DataModel.shared.getPlaces(type: "Restaurant", success: { (data) in
+            
+            self.restaurantList.removeAll()
+            self.restaurantList.append(contentsOf: data)
+            self.collectionViewRestaurants.reloadData()
+            
+            LoadingIndicatorView.hide()
+        }, failure: {
+            
+        })
     }
     
     func registerCell()  {
@@ -41,7 +58,7 @@ extension RestaurantsViewController : UICollectionViewDataSource {
         if section == 0 {
             return 1
         }else {
-            return 10
+            return restaurantList.count
         }
     }
     
@@ -52,6 +69,13 @@ extension RestaurantsViewController : UICollectionViewDataSource {
             return cell
         }else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
+            
+            let restaurant = self.restaurantList[indexPath.row]
+            cell.lblShopName.text = restaurant.shopName
+            cell.lblShopType.text = restaurant.shopType
+            cell.lblRating.text = "Rating: " + restaurant.rating
+            cell.imgShop.sd_setImage(with: URL(string: restaurant.shopImage), placeholderImage: UIImage(named: "no-image"))
+            
             return cell
         }
     }
@@ -73,7 +97,10 @@ extension RestaurantsViewController : UICollectionViewDelegate, UICollectionView
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let restaurant = self.restaurantList[indexPath.row]
         let navigationController = UIStoryboard(name: "Details", bundle: nil).instantiateViewController(withIdentifier: "DetailsViewController") as! UINavigationController
+        let vc = navigationController.viewControllers[0] as! DetailsViewController
+        vc.shop = restaurant
         self.present(navigationController, animated: true, completion: nil)
     }
     
@@ -82,6 +109,8 @@ extension RestaurantsViewController : UICollectionViewDelegate, UICollectionView
 extension RestaurantsViewController : PromotionDelegate {
     func promotionDetails() {
         let navigationController = UIStoryboard(name: "Details", bundle: nil).instantiateViewController(withIdentifier: "DetailsViewController") as! UINavigationController
+        
+        //cell.promoList = Array(self.restaurantList.prefix(5))
         self.present(navigationController, animated: true, completion: nil)
     }
     

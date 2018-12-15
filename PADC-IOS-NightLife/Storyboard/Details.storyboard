@@ -73,7 +73,7 @@
                                                 <attributedString key="attributedText">
                                                     <fragment content="Opening Now">
                                                         <attributes>
-                                                            <color key="NSBackgroundColor" red="0.58105844259999995" green="0.12855249639999999" blue="0.57453137639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="NSBackgroundColor" red="0.52299979533972596" green="0.86180378064657537" blue="0.56666536612602736" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <font key="NSFont" size="24" name="Avenir-Black"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -208,7 +208,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.098039215690000001" green="0.1058823529" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="0jl-mU-2rI" firstAttribute="top" secondItem="8eW-we-UTg" secondAttribute="top" id="9nv-Xo-T22"/>
                             <constraint firstItem="0jl-mU-2rI" firstAttribute="bottom" secondItem="VL3-du-fMl" secondAttribute="bottom" id="F9a-W3-MEY"/>
@@ -232,6 +232,17 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="imgShop" destination="b07-rg-5Qf" id="Oq5-wQ-mqw"/>
+                        <outlet property="lblAddress" destination="zlF-Uc-poJ" id="zTu-kc-6sk"/>
+                        <outlet property="lblOpeningHours" destination="y6I-qX-qDh" id="0Vs-jA-0m4"/>
+                        <outlet property="lblPhoneNumber" destination="XgF-7a-5E7" id="Z26-ec-glw"/>
+                        <outlet property="lblRating" destination="21r-G6-qqP" id="Kyc-xf-gmE"/>
+                        <outlet property="lblShopName" destination="fLb-2b-7qY" id="SDX-dZ-wyK"/>
+                        <outlet property="lblShopType" destination="8br-wf-ktO" id="jHZ-Ss-8Kx"/>
+                        <outlet property="lblStatus" destination="ufD-NT-FZN" id="YWK-ys-36C"/>
+                        <outlet property="lblwebsite" destination="ss8-KN-IFX" id="tX8-JK-rM1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aq1-vL-S1J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

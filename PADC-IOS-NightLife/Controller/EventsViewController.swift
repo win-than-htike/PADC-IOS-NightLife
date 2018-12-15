@@ -16,6 +16,8 @@ class EventsViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
+    var promotList: [PlaceVO] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
