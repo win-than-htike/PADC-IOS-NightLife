@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="PADC_IOS_NightLife" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="289" height="195"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="289" height="195"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rXf-w4-bEO">
+                        <rect key="frame" x="0.0" y="0.0" width="289" height="195"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cover-restaurant" translatesAutoresizingMaskIntoConstraints="NO" id="ACO-tX-ZPa">
+                                <rect key="frame" x="0.0" y="0.0" width="289" height="195"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eNP-dw-wnR">
+                                <rect key="frame" x="0.0" y="115" width="289" height="80"/>
+                                <subviews>
+                                    <stackView contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="B5t-Zv-mo0">
+                                        <rect key="frame" x="4" y="4" width="281" height="72"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terminal 5 Bar &amp; Restaurant" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NrO-Vi-tge">
+                                                <rect key="frame" x="0.0" y="0.0" width="281" height="24"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant &amp; Bar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDe-Z0-gue">
+                                                <rect key="frame" x="0.0" y="24" width="281" height="24"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating : 4.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qmi-cp-wCC">
+                                                <rect key="frame" x="0.0" y="48" width="281" height="24"/>
+                                                <fontDescription key="fontDescription" name="Avenir-MediumOblique" family="Avenir" pointSize="17"/>
+                                                <color key="textColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.25" alpha="0.4982341609589041" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="B5t-Zv-mo0" firstAttribute="top" secondItem="eNP-dw-wnR" secondAttribute="top" constant="4" id="0n9-zB-j9v"/>
+                                    <constraint firstAttribute="height" constant="80" id="Sjz-Sh-HFT"/>
+                                    <constraint firstItem="B5t-Zv-mo0" firstAttribute="leading" secondItem="eNP-dw-wnR" secondAttribute="leading" constant="4" id="Voq-wo-aIt"/>
+                                    <constraint firstAttribute="bottom" secondItem="B5t-Zv-mo0" secondAttribute="bottom" constant="4" id="daF-iC-mOK"/>
+                                    <constraint firstAttribute="trailing" secondItem="B5t-Zv-mo0" secondAttribute="trailing" constant="4" id="gtT-5w-NUF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098039215690000001" green="0.1058823529" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ACO-tX-ZPa" secondAttribute="trailing" id="4zr-0t-9jz"/>
+                            <constraint firstAttribute="trailing" secondItem="eNP-dw-wnR" secondAttribute="trailing" id="F1s-qg-4df"/>
+                            <constraint firstAttribute="bottom" secondItem="ACO-tX-ZPa" secondAttribute="bottom" id="Rsh-OL-XOM"/>
+                            <constraint firstItem="ACO-tX-ZPa" firstAttribute="top" secondItem="rXf-w4-bEO" secondAttribute="top" id="Yp1-XC-Eb7"/>
+                            <constraint firstItem="eNP-dw-wnR" firstAttribute="leading" secondItem="rXf-w4-bEO" secondAttribute="leading" id="apu-NC-Ism"/>
+                            <constraint firstItem="ACO-tX-ZPa" firstAttribute="leading" secondItem="rXf-w4-bEO" secondAttribute="leading" id="bWV-2S-WNm"/>
+                            <constraint firstAttribute="bottom" secondItem="eNP-dw-wnR" secondAttribute="bottom" id="iL3-Yd-2VY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="rXf-w4-bEO" secondAttribute="bottom" id="9oJ-CW-xnW"/>
+                <constraint firstItem="rXf-w4-bEO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="UP5-jl-wFd"/>
+                <constraint firstAttribute="trailing" secondItem="rXf-w4-bEO" secondAttribute="trailing" id="VEl-pE-TIK"/>
+                <constraint firstAttribute="bottom" secondItem="rXf-w4-bEO" secondAttribute="bottom" id="b0n-Vu-5gg"/>
+                <constraint firstAttribute="trailing" secondItem="rXf-w4-bEO" secondAttribute="trailing" id="dQR-UD-jHJ"/>
+                <constraint firstItem="rXf-w4-bEO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="eLC-Ma-5Mk"/>
+                <constraint firstItem="rXf-w4-bEO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="yIn-Uu-tgf"/>
+                <constraint firstItem="rXf-w4-bEO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ybY-qx-8zz"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="289" height="195"/>
+            <point key="canvasLocation" x="328.80000000000001" y="215.44227886056973"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="cover-restaurant" width="750" height="375"/>
+    </resources>
+</document>

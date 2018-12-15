@@ -32,6 +32,10 @@ class ViewController: UIViewController {
         tfSearch.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.searchTap(gesture:))))
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     @objc func searchTap(gesture : UITapGestureRecognizer){
         let navigationController = UIStoryboard(name: "Search", bundle: nil).instantiateViewController(withIdentifier: "SearchViewController") as! UINavigationController
         self.present(navigationController, animated: true, completion: nil)
@@ -79,7 +83,7 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
             break
             
         case 2:
-            let navigationController = UIStoryboard(name: "Event", bundle: nil).instantiateViewController(withIdentifier: "EventsViewController") as! UINavigationController
+            let navigationController = UIStoryboard(name: "Club", bundle: nil).instantiateViewController(withIdentifier: "ClubsViewController") as! UINavigationController
             self.present(navigationController, animated: true, completion: nil)
             break
             

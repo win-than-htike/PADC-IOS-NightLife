@@ -10,5 +10,7 @@ target 'PADC-IOS-NightLife' do
   pod 'SDWebImage'
   pod 'RealmSwift'
   pod 'Cosmos', '~> 17.0'
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
 
 end

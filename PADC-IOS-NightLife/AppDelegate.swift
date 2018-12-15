@@ -8,16 +8,25 @@
 
 import UIKit
 import Firebase
+import GoogleMaps
+import GooglePlaces
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
+        
+        //Map
+        GMSServices.provideAPIKey("AIzaSyDKOFUg9MPOjoXO9y0eKufqhwfNhxfhvj4")
+        GMSPlacesClient.provideAPIKey("AIzaSyDKOFUg9MPOjoXO9y0eKufqhwfNhxfhvj4")
+        
+        //application.statusBarStyle = .lightContent // .default
+        UINavigationBar.appearance().barStyle = .blackOpaque
+        
         return true
     }
 
