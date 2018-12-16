@@ -21,14 +21,14 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lfb-Sb-tp1">
                         <rect key="frame" x="0.0" y="0.0" width="381" height="286"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Special Events / Promotions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVP-2K-U13">
-                                <rect key="frame" x="8" y="8" width="365" height="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popular Shops" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVP-2K-U13">
+                                <rect key="frame" x="8" y="12" width="365" height="25"/>
                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="yLk-Hr-WvL">
-                                <rect key="frame" x="0.0" y="41" width="381" height="237"/>
+                                <rect key="frame" x="0.0" y="45" width="381" height="233"/>
                                 <color key="backgroundColor" red="0.098039215690000001" green="0.1058823529" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="YK2-ei-kcM">
                                     <size key="itemSize" width="50" height="50"/>
@@ -45,7 +45,7 @@
                             <constraint firstItem="yLk-Hr-WvL" firstAttribute="leading" secondItem="lfb-Sb-tp1" secondAttribute="leading" id="AZs-54-gzR"/>
                             <constraint firstItem="jVP-2K-U13" firstAttribute="leading" secondItem="lfb-Sb-tp1" secondAttribute="leading" constant="8" id="K4U-MZ-fxz"/>
                             <constraint firstAttribute="trailing" secondItem="jVP-2K-U13" secondAttribute="trailing" constant="8" id="PVY-Gg-OWe"/>
-                            <constraint firstItem="jVP-2K-U13" firstAttribute="top" secondItem="lfb-Sb-tp1" secondAttribute="top" constant="8" id="iy0-pw-qgK"/>
+                            <constraint firstItem="jVP-2K-U13" firstAttribute="top" secondItem="lfb-Sb-tp1" secondAttribute="top" constant="12" id="iy0-pw-qgK"/>
                             <constraint firstAttribute="trailing" secondItem="yLk-Hr-WvL" secondAttribute="trailing" id="j6p-9Q-zuN"/>
                         </constraints>
                     </view>
@@ -61,6 +61,7 @@
             <size key="customSize" width="381" height="286"/>
             <connections>
                 <outlet property="collectionViewEventPromotion" destination="yLk-Hr-WvL" id="cvB-CP-Gcg"/>
+                <outlet property="lblPopularShops" destination="jVP-2K-U13" id="Ekb-Jw-FrE"/>
             </connections>
             <point key="canvasLocation" x="524" y="232.98350824587709"/>
         </collectionViewCell>

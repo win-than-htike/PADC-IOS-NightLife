@@ -35,4 +35,43 @@ class DataModel {
         
     }
     
+    func getPopularPlaces(type: String, success : @escaping ([PlaceVO]) -> Void, failure : @escaping () -> Void) {
+        
+        NetworkManager.shared.loadPopularPlaces(type: type, success: { (data) in
+            
+            success(data)
+            
+        }, failure: {
+            failure()
+        })
+        
+    }
+    
+    func getAllPlaces(success : @escaping ([PlaceVO]) -> Void, failure : @escaping () -> Void) {
+        
+        NetworkManager.shared.loadAllPlaces(success: { (data) in
+            
+            success(data)
+            
+        }, failure: {
+            failure()
+        })
+        
+    }
+    
+    func getSearchPlaces(shopName: String, success : @escaping ([PlaceVO]) -> Void, failure : @escaping () -> Void) {
+        
+        NetworkManager.shared.loadSearchPlaces(shopName: shopName, success: { (data) in
+            
+            DispatchQueue.main.async {
+                success(data)
+            }
+            
+            
+        }, failure: {
+            failure()
+        })
+        
+    }
+    
 }

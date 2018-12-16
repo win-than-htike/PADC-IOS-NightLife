@@ -65,6 +65,7 @@ extension RestaurantsViewController : UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if indexPath.section == 0 {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PromotionCollectionViewCell", for: indexPath) as! PromotionCollectionViewCell
+            cell.loadPopularList(type: "Restaurant")
             cell.delegate = self
             return cell
         }else {
@@ -107,9 +108,12 @@ extension RestaurantsViewController : UICollectionViewDelegate, UICollectionView
 }
 
 extension RestaurantsViewController : PromotionDelegate {
-    func promotionDetails() {
+    
+    func promotionDetails(shop: PlaceVO) {
         let navigationController = UIStoryboard(name: "Details", bundle: nil).instantiateViewController(withIdentifier: "DetailsViewController") as! UINavigationController
-        
+        let vc = navigationController.viewControllers[0] as! DetailsViewController
+        print(shop.shopName)
+        vc.shop = shop
         //cell.promoList = Array(self.restaurantList.prefix(5))
         self.present(navigationController, animated: true, completion: nil)
     }

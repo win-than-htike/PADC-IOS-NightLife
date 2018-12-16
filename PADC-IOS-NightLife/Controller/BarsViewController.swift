@@ -67,6 +67,7 @@ extension BarsViewController : UICollectionViewDataSource {
         if indexPath.section == 0 {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PromotionCollectionViewCell", for: indexPath) as! PromotionCollectionViewCell
             cell.delegate = self
+            cell.loadPopularList(type: "bar")
             return cell
         }else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
@@ -105,8 +106,11 @@ extension BarsViewController : UICollectionViewDelegateFlowLayout, UICollectionV
 }
 
 extension BarsViewController : PromotionDelegate {
-    func promotionDetails() {
+    
+    func promotionDetails(shop: PlaceVO) {
         let navigationController = UIStoryboard(name: "Details", bundle: nil).instantiateViewController(withIdentifier: "DetailsViewController") as! UINavigationController
+        let vc = navigationController.viewControllers[0] as! DetailsViewController
+        vc.shop = shop
         self.present(navigationController, animated: true, completion: nil)
     }
     
